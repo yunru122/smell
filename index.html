@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="top"></div>
+        <div class="head">
+          <div class="logo"><img src="image/index/logo拷貝.png" style="width:150px"></div>
+          <nav>
+            <a href="#p1">首頁</a>
+            <a href="#p1">關於我們</a>
+            <a href="#p2">香氛蠟燭</a>   
+            <a href="#p3">擴香瓶</a>
+            <a href="#p4">其他產品</a>
+            <a href="#p5">聯絡我們</a>
+         </nav>
+         <div class="icon">
+             <div>
+                <img src="image/index/person.png" style="width:30px">
+             </div>
+             <div>
+              <img src="image/index/shopping.png" style="width:30px">
+           </div>
+           <div>
+            <img src="image/index/magnifier.png" style="width:30px">
+         </div>
+         </div>
+        </div>
+    </header>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">        
+          <img src="image/index/slide1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="image/index/slide2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="image/index/slide3.jpg" style="width:100%" >
+        </div>        
+    </div>   
+    <br> 
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <br><br>
+    <section>
+        <div class="card1">
+            <div><img src="image/index/goods1.jpg" style="width:380px" ></div>
+            <div><img src="image/index/goods2.jpg" style="width:380px" ></div>
+            <div><img src="image/index/goods3.jpg" style="width:380px" ></div>
+        </div>
+    </section>
+    <section>
+        <div class="card2">
+          <div class="item1">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+
+          </div>
+              
+        </div>
+    </section>
+   
+    <footer>
+        
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+        </script>
+        
+</body>
+</html>
