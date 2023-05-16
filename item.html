@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMELL&SMILE</title>
+    <link rel="stylesheet" href="item.css">
+    <script>
+        function minus(ctn_num) {
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if (num > 1) {
+                document.getElementsByClassName("input_num")[ctn_num].value = num - 1;
+            }
+        }
+
+        function add(ctn_num) {
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if (num < 100) {
+                document.getElementsByClassName("input_num")[ctn_num].value = num + 1;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="blue">SAVE 10% OFF YOUR FIRST ORDER ➞</div>
+        <div class="head">
+            <div class="logo"><img src="image/photo/logo2.png" style="width:130px"></div>
+            <nav>
+                <a href="index.html">首頁</a>
+                <a href="aboutus.html">關於我們</a>
+                <a href="candle.html">香氛蠟燭</a>
+                <a href="diffuse.html">擴香瓶</a>
+                <a href="other.html">其他產品</a>
+                <a href="contact.html">聯絡我們</a>
+                <a href="member.html">會員資訊</a>
+            </nav>
+            <div class="icon">
+                <div>
+                    <img src="image/photo/person.png" style="width:30px">
+                </div>
+                <div>
+                    <img src="image/photo/shopping.png" style="width:30px">
+                </div>
+                <div>
+                    <img src="image/photo/magnifier.png" style="width:30px">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="introduce">
+            <div class="img">
+                <div id="img1" class="image"><img src="image/candle/c2-1.jpg" /></div>
+                <div id="img2" class="image"><img src="image/candle/c2-2.jpg" /></div>
+                <ul class="select">
+                    <li><a href="#img1"></a></li>
+                    <li><a href="#img2"></a></li>
+                </ul>
+            </div>
+            <div class="title">
+                <p class="title_a">Aery 巴黎人玫瑰粉紅陶罐香氛蠟燭</p>
+                <p class="title_b">"FERNWEH:渴望著未去過的遠方"</p>
+                <p class="title_c">Fernweh 遠走探索系列: Fernweh原文為德文，有思念、家鄉的意思，在現在的用法中，多半指的是對未知的遠方有著強烈的探索慾望，也就是渴望著未去過的遠方。</p>
+                <p class="title_b">香調分布</p>
+                <p class="title_c">前調：佛手柑<br>
+                    中調：玫瑰、茉莉<br>
+                    基調：烏木、雪松、紫羅蘭<br>
+                    香氣濃郁度：清淡 淡雅 適中 馥郁
+                </p>
+
+                <p class="title_c">
+                    經典的玫瑰香，帶領妳來到巴黎的精品旅館，拱門用玫瑰花圈布置著；漫步在鵝卵石步道上兩旁滿是精緻的房屋。充滿粉紅、紅色玫瑰的浪漫粉紅泡泡香氣，雖然香調表中有出現木質香氣，但實際聞起來還是以玫瑰花香為主體，基調的香氣僅是陪襯作用以用來突顯出玫瑰味道，與其說是木質更偏向是異國感的東方線香感。
+                </p>
+                <hr>
+                <div class="price">
+                    <p>NT$1,350</p>
+                    <p>庫存:2</p>
+                </div>
+                <div class="center">
+                    <div class="number">
+                        <input type="button" value="-" class="btn" onclick="minus(0)">
+                        <input type="text" value="1" class="input_num">
+                        <input type="button" value="+" class="btn" onclick="add(0)">
+                    </div>
+                    <div class="shopping">
+                        <input type="button" value="加購物車" class="button_shop">
+                        <input type="button" value="直接購買" class="button_shop">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="otherItem">
+            <div class="item1">
+                <img src="image/candle/c3-1.jpg">
+                <div>
+                    <p>Aery 極地爐火純白陶罐香氛蠟燭<br>
+                        NT$1,350</p>
+                </div>
+            </div>
+            <div class="item2">
+                <img src="image/candle/c4-1.jpg">
+                <div>
+                    <p>SKANDINAVISK SKOG 挪威森林 香氛蠟燭<br>
+                        NT$1,580</p>
+                </div>
+            </div>
+            <div class="item3">
+                <img src="image/candle/c5-1.jpg">
+                <div>
+                    <p>SKANDINAVISK LEMPI以愛之名 香氛蠟燭<br>
+                        NT$1,580</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="comment">
+            <div class="board">
+                <p>留言板</p>
+                <div class="content">
+                    <img src="image/photo/person.png" class="memberIcon">
+                    <span class="memberName">Max </span>
+                    <span class="memberStar">★★★★☆</span>
+                    <div class="message">
+                        dl;kamvlkdm;a
+                        <hr>
+                    </div>
+                    <img src="image/photo/person.png" class="memberIcon">
+                    <span class="memberName">Max </span>
+                    <span class="memberStar">★★★☆☆</span>
+                    <div class="message">
+                        dl;kamvlkdm;a
+                        <hr>
+                    </div>
+                    <img src="image/photo/person.png" class="memberIcon">
+                    <span class="memberName">Max </span>
+                    <span class="memberStar">★★★★★</span>
+                    <div class="message">
+                        dl;kamvlkdm;a
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="sendComment">
+                <p>評論</p>
+                <form>
+                    <input type="text" placeholder="姓名" class="name">
+                    <hr><br>
+                    <textarea cols="30" rows="10" placeholder="輸入評論"></textarea><br>
+                    <div class="star">
+                        <input type="radio" name="rdStar" value="5"><label for="5">☆</label>
+                        <input type="radio" name="rdStar" value="4"><label for="4">☆</label>
+                        <input type="radio" name="rdStar" value="3"><label for="3">☆</label>
+                        <input type="radio" name="rdStar" value="2"><label for="2">☆</label>
+                        <input type="radio" name="rdStar" value="1"><label for="1">☆</label>
+                    </div>
+                    <br>
+                    <input type="button" value="送出" class="send">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <div style="clear: both;"></div>
+    <footer>
+        <div class="foot">
+            <div>
+                <h3 style="color: #709ac6; line-height: 0;">info.</h3><br>
+                <a href="index.html">HOME</a><br>
+                <a href="aboutus.html">ABOUT US</a><br>
+                <a href="contact.html">CONTACT US</a><br>
+                <div style="line-height: 2;">VIEWERS:</div>
+            </div>
+            <div class="hrr"><img src="image/photo/logo白.png" style="width:250px"><br>
+                <h3>SMELL&SMILE</h3><br>Copyright © 2023 SMELL&SMILE
+            </div>
+            <div>
+                <h3 style="color: #709ac6; line-height: 0;">Goods</h3><br>
+                <a href="allpd.html">ALL PRODUCTS</a><br>
+                <a href="candle.html">CANDLE</a><br>
+                <a href="diffuse.html">DIFFUSE</a><br>
+                <a href="other.html">OTHERS PRODUCTS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
