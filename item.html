@@ -54,13 +54,28 @@
 
     <main>
         <div class="introduce">
-            <div class="img">
-                <div id="img1" class="image"><img src="image/candle/c2-1.jpg" /></div>
-                <div id="img2" class="image"><img src="image/candle/c2-2.jpg" /></div>
-                <ul class="select">
-                    <li><a href="#img1"></a></li>
-                    <li><a href="#img2"></a></li>
-                </ul>
+            <div class="image">
+                <div class="img">
+                    <!--按鈕文字，點擊文字，控制圖片/內容切換-->
+                    <input type="radio" name="imgInput" value="0" id="imgInput1" checked hidden />
+                    <label for="imgInput1">1</label>
+
+                    <input type="radio" name="imgInput" value="1" id="imgInput2" hidden />
+                    <label for="imgInput2">2</label>
+
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <!-- <div class="img">
+                    <div id="img1" class="image"><img src="image/candle/c2-1.jpg" /></div>
+                    <div id="img2" class="image"><img src="image/candle/c2-2.jpg" /></div>
+                    <ul class="select">
+                        <li><a href="#img1"></a></li>
+                        <li><a href="#img2"></a></li>
+                    </ul>
+                </div> -->
             </div>
             <div class="title">
                 <div class="titpro">
