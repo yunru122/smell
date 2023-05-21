@@ -225,7 +225,7 @@ body {
 }
 
 .img {
-    /*設置播放器盒子slide的樣式*/
+    /*設置播放器盒子img的樣式*/
     position: relative;
     margin: 10px auto;
     width: 300px;
