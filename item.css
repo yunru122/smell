@@ -115,11 +115,13 @@ body {
     padding: 0 30px 30px 30px;
     color: #7f7069;
 }
-.titpro{
+
+.titpro {
     display: flex;
     justify-content: space-between;
     align-items: center
 }
+
 .title_a {
     font-size: 28px;
     font-weight: bold;
@@ -135,10 +137,12 @@ body {
     font-size: 16px;
     padding: 10px;
 }
-.proprice{
+
+.proprice {
     font-size: 22px;
     padding-right: 30px;
 }
+
 .price {
     text-align: center;
     background-color: #f0e7e0;
@@ -165,7 +169,7 @@ body {
     width: 60px;
     margin: 0px;
     height: 40px;
-    background-color:#fefdf9;
+    background-color: #fefdf9;
     font-size: 15px;
     color: #7f7069;
 }
@@ -181,9 +185,9 @@ body {
     color: #7f7069;
 }
 
-/* .btn:hover {
-    color: gray;
-} */
+.btn:hover {
+    cursor: pointer;
+}
 
 /* 購物按鈕 */
 .shopping {
@@ -264,12 +268,13 @@ body {
     border: 0;
     font-size: 30px;
     /* font-weight: bold; */
-    padding: 75px 0 30px 0 ;
+    padding: 75px 0 30px 0;
     position: relative;
     margin-top: 40px;
-    
-  }
-  .hr-solid-content::before {
+
+}
+
+.hr-solid-content::before {
     content: attr(data-content);
     position: absolute;
     padding: 0 1ch;
@@ -280,12 +285,13 @@ body {
     white-space: nowrap;
     left: 50%;
     transform: translateX(-50%);
-  }
- 
-.hot{
-    background-color:#f0e7e0 ;
+}
+
+.hot {
+    background-color: #f0e7e0;
     height: 630px;
 }
+
 .otherItem {
     width: 90%;
     height: 500px;
@@ -296,7 +302,7 @@ body {
 }
 
 .item1 {
-    
+
     width: 300px;
     height: 500px;
     text-align: center;
@@ -349,7 +355,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     position: absolute;
-    background-color:white;
+    background-color: white;
     color: black;
     font-size: 18px;
     width: 300px;
@@ -424,10 +430,10 @@ body {
     text-align: center;
     background-color: #bccddf;
     padding: 30px 0 0 0;
-    color: #fefdf9 ;
-    border:1px solid white;
+    color: #fefdf9;
+    border: 1px solid white;
     border-radius: 30px;
-}   
+}
 
 .board p {
     font-size: 20px;
@@ -442,22 +448,24 @@ body {
 .memberIcon {
     width: 30px;
     height: 30px;
-    margin: 0 6px 0 0 ;
+    margin: 0 6px 0 0;
 }
-.memic{
+
+.memic {
     display: flex;
     align-items: center;
     justify-content: start;
     /* padding: 13px 0 0 0 ; */
 }
+
 .memberName {
     font-size: 15px;
-    margin:  0 6px 0 6px;
+    margin: 0 6px 0 6px;
 }
 
 .memberStar {
     font-size: 20px;
-    margin:  0 6px 0 6px;
+    margin: 0 6px 0 6px;
 
 }
 
@@ -468,7 +476,7 @@ body {
 }
 
 .message hr {
-    margin:20px 40px 20px 0 ;
+    margin: 20px 40px 20px 0;
     background-color: white;
     border: none;
     height: 1px;
@@ -480,10 +488,11 @@ body {
     width: 450px;
     height: 450px;
     text-align: center;
-    padding: 30px 0 0 0 ;
+    padding: 30px 0 0 0;
     border-radius: 30px;
-    color:white;
+    color: white;
 }
+
 /* 
 .sendComment p {
     font-size: 20px;
@@ -492,7 +501,7 @@ body {
 
 form {
     text-align: center;
-    
+
 }
 
 .name {
@@ -501,7 +510,7 @@ form {
     /* border-bottom: 1px solid black; */
     width: 350px;
     height: 30px;
-    padding-left:10px ;
+    padding-left: 10px;
     border-radius: 10px;
 }
 
@@ -522,7 +531,7 @@ form textarea {
 }
 
 /* 星星評分 */
-.star {  
+.star {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
