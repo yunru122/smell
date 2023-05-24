@@ -8,8 +8,8 @@
     <title>會員資料</title>
     <link rel="stylesheet" href="profile.css">
     <script>
-        function revise(ctn_num) {
-            document.getElementById("btn")[ctn_num].readOnly = true
+        function revise() {
+            document.getElementById("btn").readOnly = false
         }
     </script>
 </head>
@@ -56,14 +56,11 @@
                     <ul>
                         <li>
                             <form class="member">
-                                <input type="text" id="btn" value="姓名" readonly>
-                                <input type="button" value="修改" onclick="revise(0)"><br>
-                                <input type="text" id="btn" value="使用者名稱" readonly>
-                                <input type="button" value="修改" onclick="revise(1)"><br>
-                                <input type="text" id="btn" value="信箱" readonly>
-                                <input type="button" value="修改" onclick="revise(2)"><br>
-                                <input type="password" id="btn" value="密碼" readonly>
-                                <input type="button" value="修改" onclick="revise(3)"><br>
+                                <input type="text" id="btn" value="姓名" readonly><br>
+                                <input type="text" id="btn" value="使用者名稱" readonly><br>
+                                <input type="text" id="btn" value="信箱" readonly><br>
+                                <input type="password" id="btn" value="密碼" readonly><br>
+                                <input type="button" value="修改" onclick="revise()">
                             </form>
                         </li>
                         <li>
