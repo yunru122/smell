@@ -1,0 +1,159 @@
+.cart{
+    padding-top: 140px;
+    color: #7f7069;
+}
+.cartitle{
+    color: #7f7069;
+    text-align: center;
+    line-height: 2;
+    padding: 10px 0 30px 0;
+}
+.carlist{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+/* 購買列表 */
+.itemcar{
+    /* height: 500px; */
+    width: 59%;
+    background-color: #fefdf9;
+    margin-right: 30px;
+}
+.cartab{
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.trtit{
+    font-size: 16px;
+    line-height: 2;
+    /* font-weight: bold; */
+}
+.cartab td{
+    padding: 6px 0 6px 0;
+}
+.cartab img{
+    width: 170px;
+    height: 170px;
+}
+.tds{
+    text-align: left;
+}
+.cartab hr{
+    background-color: #7f7069;
+    border: none;
+    height: 1.5px;
+}
+.delete {
+    font-size: 20px;
+    color: #7f7069;
+    transition: .2s;
+    border: none;
+    background-color: #fefdf9;
+}
+
+.delete:hover {
+    transform: scale(1.4);
+    /* color: #ffffff; */
+    cursor: pointer;
+}
+
+
+/* 數量加減 */
+.input_num {
+    border: 0px;
+    text-align: center;
+    width: 30px;
+    margin: 0px;
+    height: 40px;
+    background-color: #fefdf9;
+    font-size: 15px;
+    color: #7f7069;
+    
+}
+
+.btn {
+    border: 0px;
+    margin-right: 0px;
+    font-size: 22px;
+    width: 35px;
+    height: 35px;
+    background-color: #f0e7e0;
+    border-radius: 50px;
+    color: #7f7069;
+}
+.btn:hover{
+   color: #988a84;
+   font-weight: bold;
+}
+
+/* 總額列表 */
+.total{
+    /* height: 500px; */
+    background-color: #f0e7e0;
+    width: 30%;
+    padding: 15px 40px 0 40px;
+}
+.title_t{
+    padding: 20px 0px 30px 10px;
+    font-weight: bold;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+}
+.title_sum{
+    line-height: 2;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 0 16px 10px;
+}
+.title_s{
+    padding: 24px 0 0 10px ;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+.total hr{
+    background-color: #7f7069;
+    border: none;
+    height: 1.5px;
+}
+.button_check {
+    width: 100%;
+    height: 50px;
+    /* margin-top: 3px; */
+    border: 2px solid;
+    border-color: #7f7069;
+    border-radius: 8px;
+    background-color: #7f7069;
+    color: white;
+    margin: 10px 0px 10px 0;
+    font-size: 16px;
+}
+
+.button_check:hover {
+    background-color: #f0e7e0;
+    color: #7f7069;
+    cursor: pointer;
+}
+.button_back {
+    width: 100%;
+    height: 50px;
+    /* margin-top: 3px; */
+    border: 2px solid;
+    border-color: #7f7069;
+    border-radius: 8px;
+    background-color: #fefdf9;
+    color: #7f7069;
+    margin: 10px 0px 0px 0;
+    font-size: 16px;
+}
+
+.button_back:hover {
+    background-color: #f0e7e0;
+    color: #7f7069;
+    cursor: pointer;
+}
