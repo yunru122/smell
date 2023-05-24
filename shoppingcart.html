@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>購物車</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="shoppingcart.css">
+    <script>
+        function minus(ctn_num) {
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if (num > 1) {
+                document.getElementsByClassName("input_num")[ctn_num].value = num - 1;
+            }
+        }
+
+        function add(ctn_num) {
+            var num = Number(document.getElementsByClassName("input_num")[ctn_num].value);
+            if (num < 100) {
+                document.getElementsByClassName("input_num")[ctn_num].value = num + 1;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="blue">SAVE 10% OFF YOUR FIRST ORDER ➞</div>
+        <div class="head">
+          <div class="logo"><img src="image/photo/logo2.png" style="width:130px"></div>
+          <nav>
+            <a href="index.html">首頁</a>
+            <a href="aboutus.html">關於我們</a>
+            <a href="candle.html">香氛蠟燭</a>   
+            <a href="diffuse.html">擴香瓶</a>
+            <a href="other.html">其他產品</a>
+            <a href="contact.html">聯絡我們</a>
+            <a href="member.html">會員資訊</a>
+         </nav>
+         <div class="icon">
+             <div>
+                <a href="login.html"><img src="image/photo/person.png" style="width:30px"></a>
+             </div>
+             <div>
+              <a href="shoppingcart.html"><img src="image/photo/shopping.png" style="width:30px"></a>
+           </div>          
+          <div class="search">
+              <form>
+                <img src="image/photo/magnifier.png" style="width:30px">
+                <input type="search" id="search" name="search" placeholder="Search..." />     
+              </form>
+          </div>	
+         </div>
+         </div>
+        </div>
+    </header>
+    <section>
+        <div class="cart">
+            <div class="cartitle"><h2>Shopping Cart</h2></div>
+            <div class="carlist">
+                <div class="itemcar">
+                    <table class="cartab">
+                        <tr class="trtit">
+                            <td class="tds" style="padding-left: 20px;">PRODUCT</td>
+                            <td class="tds">DESCRIPTION</td>
+                            <td>QUANTITY</td>
+                            <td>TOTAL</td>
+                            <td>DELETE</td>
+                        </tr>
+                        <tr><td colspan="6"><hr></td></tr>
+                        <tr>
+                            <td class="tds"><img src="image/candle/c1-1.jpg"></td>
+                            <td class="tds">SKANDINAVISK SKOG<br>挪威森林 香氛蠟燭<br><br>$1,580</td>
+                            <td>
+                                 <div class="quant">
+                                     <input type="button" value="-" class="btn" onclick="minus(0)">
+                                     <input type="text" value="1" class="input_num">
+                                     <input type="button" value="+" class="btn" onclick="add(0)">
+                                 </div>
+                            </td>
+                            <td>$1,580</td>
+                            <td><button class="delete" name="delet_b" value="">✕</button></td>
+                        </tr>
+                        <tr><td colspan="6"><hr></td></tr>
+                        <tr>
+                            <td class="tds"><img src="image/candle/c2-1.jpg"></td>
+                            <td class="tds">Aery<br>巴黎人玫瑰粉紅陶罐香氛蠟燭<br><br>$1,350</td>
+                            <td>
+                                <div class="quant">
+                                    <input type="button" value="-" class="btn" onclick="minus(1)">
+                                    <input type="text" value="1" class="input_num">
+                                    <input type="button" value="+" class="btn" onclick="add(1)">
+                                </div>
+                            </td>
+                            <td>$1,350</td>
+                            <td><button class="delete" name="delet_b" value="">✕</button></td>
+                        </tr>
+                        <tr><td colspan="6"><hr></td></tr>
+                        <tr>
+                            <td class="tds"><img src="image/candle/c3-1.jpg"></td>
+                            <td class="tds">Aery<br>極地爐火純白陶罐香氛蠟燭<br><br>$1,350</td>
+                            <td>
+                                <div class="quant">
+                                    <input type="button" value="-" class="btn" onclick="minus(2)">
+                                    <input type="text" value="1" class="input_num">
+                                    <input type="button" value="+" class="btn" onclick="add(2)">
+                                </div>
+                            </td>
+                            <td>$1,350</td>
+                            <td><button class="delete" name="delet_b" value="">✕</button></td>
+                        </tr>
+                        <tr><td colspan="6"><hr></td></tr>
+                    </table>
+                </div>
+                <div class="total">
+                    <p class="title_sum">ORDER SUMMARY</p>
+                    <hr>
+                    <div class="title_s"><p>SUBTOTAL</p><p>NT$ 4,280</p></div>
+                    <div class="title_s" style="padding-bottom: 24px;"><p>SHIPPING</p><p>NT$ 60</p></div>
+                    <hr>
+                    <div class="title_t"><p>TOTAL</p><p>NT$ 4,340</p></div>
+                    <input type="button" value="CHECK OUT" class="button_check"><br>
+                    <input type="button" value="BACK TO SHOP" class="button_back">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="foot">
+          <div>
+            <h3 style="color: #709ac6; line-height: 0;">info.</h3><br>
+            <a href="index.html">HOME</a><br>
+            <a href="aboutus.html">ABOUT US</a><br>
+            <a href="contact.html">CONTACT US</a><br>
+            <div style="line-height: 2;">VIEWERS：</div>
+          </div>
+          <div class="hrr"><img src="image/photo/logo白.png" style="width:250px"><br><h3>SMELL&SMILE</h3><br>Copyright © 2023 SMELL&SMILE</div>
+          <div>
+            <h3 style="color: #709ac6; line-height: 0;">Goods</h3><br>
+            <a href="allpd.html">ALL PRODUCTS</a><br>
+            <a href="candle.html">CANDLE</a><br>
+            <a href="diffuse.html">DIFFUSE</a><br>
+            <a href="other.html">OTHERS PRODUCTS</a>
+          </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
