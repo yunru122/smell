@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登入/註冊</title>
-    <link rel="stylesheet" href="login.css">
+    <title>會員資料</title>
+    <link rel="stylesheet" href="profile.css">
+    <script>
+        function revise(ctn_num) {
+            document.getElementById("btn")[ctn_num].readOnly = true
+        }
+    </script>
 </head>
 
 <body>
@@ -38,35 +43,36 @@
     </header>
 
     <main>
-        <div class="LogReg">
-            <div class="log">
-                <!--按鈕文字，點擊文字，控制圖片/內容切換-->
-                <input type="radio" name="logInput" value="0" id="logInput1" checked hidden />
-                <label for="logInput1">登入</label>
+        <div class="pro">
+            <div class="profile">
+                <div class="button">
+                    <input type="radio" name="btnInput" value="0" id="btnInput1" checked hidden />
+                    <label for="btnInput1">會員資料</label>
 
-                <input type="radio" name="logInput" value="1" id="logInput2" hidden />
-                <label for="logInput2">註冊</label>
-
-                <ul>
-                    <li>
-                        <form class="login">
-                            <p>登入</p>
-                            <input type="text" name="" placeholder="信箱/使用者名稱"><br>
-                            <input type="password" name="" placeholder="密碼"><br>
-                            <input type="button" value="登入">
-                        </form>
-                    </li>
-                    <li>
-                        <form class="register">
-                            <p>註冊</p>
-                            <input type="text" name="" placeholder="姓名"><br>
-                            <input type="text" name="" placeholder="使用者名稱"><br>
-                            <input type="text" name="" placeholder="信箱"><br>
-                            <input type="password" name="" placeholder="密碼"><br>
-                            <input type="button" value="註冊">
-                        </form>
-                    </li>
-                </ul>
+                    <input type="radio" name="btnInput" value="1" id="btnInput2" hidden />
+                    <label for="btnInput2">訂單紀錄</label>
+                </div>
+                <div class="memberPro">
+                    <ul>
+                        <li>
+                            <form class="member">
+                                <input type="text" id="btn" value="姓名" readonly>
+                                <input type="button" value="修改" onclick="revise(0)"><br>
+                                <input type="text" id="btn" value="使用者名稱" readonly>
+                                <input type="button" value="修改" onclick="revise(1)"><br>
+                                <input type="text" id="btn" value="信箱" readonly>
+                                <input type="button" value="修改" onclick="revise(2)"><br>
+                                <input type="password" id="btn" value="密碼" readonly>
+                                <input type="button" value="修改" onclick="revise(3)"><br>
+                            </form>
+                        </li>
+                        <li>
+                            <table class="order">
+                                <tr></tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </main>
