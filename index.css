@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -127,6 +129,10 @@ text-decoration:none;
 color: white;
 line-height: 2;
 }
+.foot a:hover{
+  text-decoration: underline;
+  color: white;
+}
 .hrr{
 margin-top: 20px;
 padding: 0 90px 0 90px;
@@ -203,15 +209,25 @@ border-left:1px solid #fefdf9;
   padding: 0px;
   box-shadow: 18px 18px 0px 0px #7f7069;
   text-align: center;
+  transition: all 0.4s ease-out;
  }
+ .shw:hover{
+  transform:scale(1.05,1.05);  
+ }
+
  .about{
   width: 50%;
    padding-top: 20px;
    text-align: center;
  }
 .about img{
-  filter: drop-shadow(2px 2px 2px #7f7069)
+  filter: drop-shadow(2px 2px 2px #7f7069);
+  transition: all 0.3s ease-out; 
 }
+.about img:hover{
+  transform:scale(1.1,1.1);
+ }
+
 .card1 img{
   padding: 8px;
 }
@@ -221,7 +237,7 @@ border-left:1px solid #fefdf9;
   /* border: 2.5px #717171 solid;
   padding:8px; */
   box-shadow: 0 0 0px 2.3px #717171;
-  transition: all 0.3s;
+  transition: all 0.4s;
 }
 
 /* 按鈕動畫 */
@@ -238,6 +254,7 @@ border-left:1px solid #fefdf9;
   transition: all 0.5s;
   cursor: pointer;
   margin: 30px;
+  font-family: 'Cormorant', serif;
 }
 
 .button span {
@@ -311,11 +328,13 @@ border-left:1px solid #fefdf9;
 .hr-solid-content {
   color: #7f7069;
   border: 0;
-  font-size: 30px;
+  font-size: 37px;
   /* font-weight: bold; */
   padding: 1em 0;
   position: relative;
   margin-top: 40px;
+  font-family: 'Cormorant', serif;
+  font-weight: bolder;
   
 }
 .hr-solid-content::before {
@@ -329,4 +348,8 @@ border-left:1px solid #fefdf9;
   white-space: nowrap;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.eng{
+  font-family: 'Cormorant', serif;
 }
