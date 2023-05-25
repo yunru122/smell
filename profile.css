@@ -115,30 +115,18 @@ body {
     text-align: center;
     color: #FFF;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 }
 
-.button {
-    width: 100px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-}
-
-.memberPro {
-    width: 500px;
-    height: 450px;
-}
-
-.memberPro ul {
+.profile ul {
     padding: 0;
     height: 9999px;
     transition: all 0.5s;
     /*控制所有動畫完成時間是0.5秒，即完成一次圖片切換勇士0.5秒*/
 }
 
-.memberPro li {
+.profile li {
     float: left;
     width: 500px;
     height: 450px;
@@ -147,24 +135,24 @@ body {
     font-size: 36px;
 }
 
-.memberPro li:nth-child(1) {
+.profile li:nth-child(1) {
     /*:nth-child(n) 選擇器匹配屬於其父元素的第 N 個子元素，不論元素的類型。*/
     background-color: #988a81;
     background-size: 500px 450px;
     /*設置背景圖片*/
 }
 
-.memberPro li:nth-child(2) {
+.profile li:nth-child(2) {
     background-color: #988a81;
     background-size: 500px 450px;
     /*設置背景圖片*/
 }
 
-.button input[name="btnInput"] {
+.profile input[name="btnInput"] {
     display: none;
 }
 
-.button label[for^="btnInput"] {
+.profile label[for^="btnInput"] {
     /*包含imgInput的，統一進行樣式設置*/
     top: 420px;
     width: 100px;
@@ -176,7 +164,7 @@ body {
     cursor: pointer;
 }
 
-.button label[for^="btnInput"]:hover {
+.profile label[for^="btnInput"]:hover {
     color: #f0e7e0;
 }
 
@@ -185,44 +173,68 @@ body {
     /*以百分比來規定改變發生的時間，0% 是動畫的開始時間，100% 動畫的結束時間。*/
     0%,
     28.5% {
-        margin-left: 0;
+        margin-top: 0;
     }
 
     33.3%,
     62% {
-        margin-left: -500px;
+        margin-top: -450px;
     }
 
     66.7%,
     95.2% {
-        margin-left: -1000px;
+        margin-top: -900px;
     }
 
     100% {
-        margin-left: 0;
+        margin-top: 0;
     }
 }
 
 /*控制三個文字的樣式*/
-.button label[for="btnInput1"] {
+.profile label[for="btnInput1"] {
     left: 165px;
 }
 
-.button label[for="btnInput2"] {
+.profile label[for="btnInput2"] {
     left: 315px;
 }
 
 /*當點擊按鈕文字時2，控制ul顯示的內容*/
 #btnInput1:checked~ul {
-    margin-left: 0;
+    margin-top: 0;
 }
 
 #btnInput2:checked~ul {
-    margin-left: -500px;
+    margin-top: -450px;
 }
 
 .member {
     text-align: center;
     font-size: 20px;
     line-height: 50px;
+}
+
+.ord {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.order {
+    line-height: 50px;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+
+.order img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.order p {
+    display: inline-block;
 }

@@ -8,8 +8,14 @@
     <title>會員資料</title>
     <link rel="stylesheet" href="profile.css">
     <script>
-        function revise() {
-            document.getElementById("btn").readOnly = false
+        function revise(num) {
+            document.getElementById("btn" + num).readOnly = false;
+            document.getElementById("send" + num).style.display = "block";
+        }
+
+        function send(num) {
+            document.getElementById("send" + num).style.display = "none";
+            document.getElementById("btn" + num).readOnly = true;
         }
     </script>
 </head>
@@ -45,31 +51,55 @@
     <main>
         <div class="pro">
             <div class="profile">
-                <div class="button">
-                    <input type="radio" name="btnInput" value="0" id="btnInput1" checked hidden />
-                    <label for="btnInput1">會員資料</label>
+                <input type="radio" name="btnInput" value="0" id="btnInput1" checked hidden />
+                <label for="btnInput1">會員資料</label>
 
-                    <input type="radio" name="btnInput" value="1" id="btnInput2" hidden />
-                    <label for="btnInput2">訂單紀錄</label>
-                </div>
-                <div class="memberPro">
-                    <ul>
-                        <li>
-                            <form class="member">
-                                <input type="text" id="btn" value="姓名" readonly><br>
-                                <input type="text" id="btn" value="使用者名稱" readonly><br>
-                                <input type="text" id="btn" value="信箱" readonly><br>
-                                <input type="password" id="btn" value="密碼" readonly><br>
-                                <input type="button" value="修改" onclick="revise()">
-                            </form>
-                        </li>
-                        <li>
-                            <table class="order">
-                                <tr></tr>
-                            </table>
-                        </li>
-                    </ul>
-                </div>
+                <input type="radio" name="btnInput" value="1" id="btnInput2" hidden />
+                <label for="btnInput2">訂單紀錄</label>
+
+                <ul>
+                    <li>
+                        <form class="member">
+                            <input type="text" id="btn1" value="姓名" readonly>
+                            <input type="button" value="修改" onclick="revise(1)">
+                            <input type="button" value="確認" id="send1" onclick="send(1)" style="display: none;"><br>
+                            <input type="text" id="btn2" value="使用者名稱" readonly>
+                            <input type="button" value="修改" onclick="revise(2)">
+                            <input type="button" value="確認" id="send2" onclick="send(2)" style="display: none;"><br>
+                            <input type="text" id="btn3" value="信箱" readonly>
+                            <input type="button" value="修改" onclick="revise(3)">
+                            <input type="button" value="確認" id="send3" onclick="send(3)" style="display: none;"><br>
+                            <input type="password" id="btn4" value="密碼" readonly>
+                            <input type="button" value="修改" onclick="revise(4)">
+                            <input type="button" value="確認" id="send4" onclick="send(4)" style="display: none;"><br>
+                        </form>
+                    </li>
+                    <li>
+                        <div class="ord">
+                            <div class="order">
+                                <img src="image/candle/c2-1.jpg">
+                                <p>title</p>
+                                <p>數量</p>
+                                <p>$150</p>
+                                <hr>
+                            </div>
+                            <div class="order">
+                                <img src="image/candle/c3-1.jpg">
+                                <p>title</p>
+                                <p>數量</p>
+                                <p>$150</p>
+                                <hr>
+                            </div>
+                            <div class="order">
+                                <img src="image/candle/c4-1.jpg">
+                                <p>title</p>
+                                <p>數量</p>
+                                <p>$150</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
