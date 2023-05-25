@@ -115,8 +115,9 @@ body {
     text-align: center;
     color: #FFF;
     overflow: hidden;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap
 }
 
 .profile ul {
@@ -225,7 +226,7 @@ body {
 .order {
     line-height: 50px;
     width: 300px;
-    height: 150px;
+    height: 100px;
     margin: 10px;
 }
 
