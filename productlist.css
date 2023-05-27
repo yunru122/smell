@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Cormorant:wght@400;600&display=swap');
+
 .prolist{
     padding-top: 140px;
 }
@@ -5,8 +7,37 @@
     color: #7f7069;
     text-align: center;
     line-height: 2;
-    padding: 10px 0 30px 0;
+    padding: 0px 0 45px 0;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+   
 }
+/* 分割線 */
+.prohr{
+    color: #7f7069;
+    border: 0;
+    font-size: 35px;
+    padding: 1em 0;
+    position: relative;
+    margin-top: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bolder;
+    
+  }
+  .prohr::before {
+    content: attr(data-content);
+    position: absolute;
+    padding: 0 1ch;
+    line-height: 1px;
+    border: solid #7f7069;
+    border-width: 0 480px;
+    width: fit-content;
+    white-space: nowrap;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
 .proarray{
     width: 100%;
     display: flex;

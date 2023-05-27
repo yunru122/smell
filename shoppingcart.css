@@ -6,7 +6,10 @@
     color: #7f7069;
     text-align: center;
     line-height: 2;
-    padding: 10px 0 30px 0;
+    padding: 10px 0 26px 0;
+    font-family: 'Cormorant', serif;
+    font-size: 45px;
+    font-weight: bolder;
 }
 .carlist{
     display: flex;
@@ -28,9 +31,10 @@
     padding-top: 10px;
 }
 .trtit{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 2;
-    /* font-weight: bold; */
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
 }
 .cartab td{
     padding: 6px 0 6px 0;
@@ -99,22 +103,26 @@
 }
 .title_t{
     padding: 20px 0px 30px 10px;
-    font-weight: bold;
-    font-size: 22px;
+    font-weight: bolder;
+    font-size: 26px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Cormorant Garamond', serif;
 }
 .title_sum{
     line-height: 2;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 28px;
+    font-weight: bolder;
     padding: 20px 0 16px 10px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
 }
 .title_s{
-    padding: 24px 0 0 10px ;
-    font-size: 18px;
+    padding: 24px 0 0 10px;
+    font-size: 22px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Cormorant Garamond', serif;
 }
 .total hr{
     background-color: #7f7069;
@@ -131,7 +139,8 @@
     background-color: #7f7069;
     color: white;
     margin: 10px 0px 10px 0;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .button_check:hover {
@@ -149,7 +158,8 @@
     background-color: #fefdf9;
     color: #7f7069;
     margin: 10px 0px 0px 0;
-    font-size: 16px;
+    font-size: 17px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .button_back:hover {
