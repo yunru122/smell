@@ -157,9 +157,9 @@ body {
     /*包含imgInput的，統一進行樣式設置*/
     top: 420px;
     width: 100px;
-    height: 20px;
-    line-height: 20px;
-    border: 1px solid black;
+    height: 50px;
+    line-height: 50px;
+    border: none;
     color: #7f7069;
     background: #fefdf9;
     cursor: pointer;
