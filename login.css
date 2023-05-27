@@ -221,10 +221,13 @@ body {
     background: #fefdf9;
     cursor: pointer;
     line-height: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
 }
-
-.log label[for^="logInput"]:hover {
-    color: #f0e7e0;
+.log input[name^="logInput"]:checked + label, .log label[for^="logInput"]:hover{
+    background-color:#f0e7e0;
+    /* color: #f0e7e0; */
 }
 
 @keyframes marginLeft {
@@ -294,6 +297,7 @@ form input{
     padding-left: 15px;
     border-radius: 15px;
     margin: 0px 0 10px 0 ;
+    outline: none;
 }
 .formbtn{
     background-color: #988a81;
