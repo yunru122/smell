@@ -16,9 +16,10 @@ header {
 .head {
     background-color: #bccddf;
     width: 100%;
-    height: 100px;
+    height: 120px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 body {
@@ -28,72 +29,47 @@ body {
 
 nav {
     text-align: center;
-    width: 55%;
+    /* width: 55%;
     padding-top: 26px;
-    padding-left: 6px;
+    padding-left: 6px; */
 }
-
 nav a {
     padding: 10px 17px;
-    margin-right: 8px;
+    margin-left: 43px;
     display: inline-block;
-    color: #7f7069;
-    font-size: 18px;
+    color: white;
+    font-size: 20px;
     text-decoration: none;
+    
 }
 
 nav a:hover {
     box-shadow: 0 3px;
     padding-bottom: 10px;
-    color: #988a81;
+    color: #709ac6;
     transition: all 0.3s;
 }
 
 .logo {
-    padding-top: 15px;
-}
-
-/* footer */
-footer {
-    height: 290px;
-    background-color: #bccddf;
-}
-
-.foot {
-    padding-top: 30px;
-    height: 250px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* 垂直置中 */
+    margin: 20px 0 20px 0;
+    width: 20%;
     text-align: center;
-    color: white;
-    line-height: 1.5;
-}
-
-.foot a {
-    text-decoration: none;
-    color: white;
-    line-height: 2;
-}
-
-.foot a:hover {
-    text-decoration: underline;
-    color: white;
-}
-
-.hrr {
-    margin-top: 20px;
-    padding: 0 90px 0 90px;
+    /* padding-top: 15px; */
     border-right: 1px solid #fefdf9;
     border-left: 1px solid #fefdf9;
 }
+.tit{
+    color: white;
+    padding-right: 60px;
+    font-size: 20px;
+}
+
 
 /* 管理商品 */
 .b_body {
-    height: 700px;
+    height: 800px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 180px;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -112,20 +88,61 @@ footer {
 
 .b_about a {
     text-decoration: none;
-    color: #988a81;
+    color: #7f7069;
+    font-size: 18px;
     line-height: 2;
 }
 
 .b_about a:hover {
     text-decoration: underline;
-    color: #988a81;
+    color: #7f7069;
 }
 
 .items {
     width: 500px;
     margin-top: 20px;
+    color: #7f7069;
+    align-items: center;
 }
 
 .items form {
     line-height: 2;
+}
+.itinp{
+    background-color: #f0e7e0;
+    /* border: 1px solid #988a81; */
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 30px;
+    outline: none;
+    margin: 10px 20px 10px 20px;
+}
+textarea{
+    background-color: #f0e7e0;
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    outline: none;
+    margin: 10px 20px 10px 20px;
+}
+.items div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itbtn{
+    background-color: #7f7069;
+    border: none;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px
+}
+.itbtn:hover{
+    background-color: #f0e7e0;
+    /* border: 1px solid #7f7069; */
+    color: #7f7069;
 }
