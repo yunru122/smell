@@ -283,92 +283,6 @@ body {
     padding: 0 30px 30px 30px;
 }
 
-.img {
-    /*設置播放器盒子img的樣式*/
-    position: relative;
-    margin: 10px auto;
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    font-family: Arial;
-    color: #FFF;
-    overflow: hidden;
-}
-
-.img ul {
-    margin: 10px 0;
-    padding: 0;
-    width: 9999px;
-    transition: all 0.5s;
-    /*控制所有動畫完成時間是0.5秒，即完成一次圖片切換勇士0.5秒*/
-}
-
-.img li {
-    float: left;
-    width: 450px;
-    height: 450px;
-    list-style: none;
-    line-height: 200px;
-    font-size: 36px;
-}
-
-.img li:nth-child(1) {
-    /*:nth-child(n) 選擇器匹配屬於其父元素的第 N 個子元素，不論元素的類型。*/
-    background-image: url(image/candle/c2-1.jpg);
-    background-size: 450px 450px;
-    /*設置背景圖片*/
-}
-
-.img li:nth-child(2) {
-    background-image: url(image/candle/c2-2.jpg);
-    background-size: 450px 450px;
-    /*設置背景圖片*/
-}
-
-.img input[name="imgInput"] {
-    display: none;
-}
-
-.img label[for^="imgInput"] {
-    /*包含imgInput的，統一進行樣式設置*/
-    position: absolute;
-    top: 410px;
-    width: 20px;
-    height: 20px;
-    margin: 0 20px;
-    line-height: 20px;
-    color: #7f7069;
-    background: #fefdf9;
-    cursor: pointer;
-}
-
-.img label[for^="imgInput"]:hover {
-    color: #f0e7e0;
-}
-
-@keyframes marginLeft {
-
-    /*以百分比來規定改變發生的時間，0% 是動畫的開始時間，100% 動畫的結束時間。*/
-    0%,
-    28.5% {
-        margin-left: 0;
-    }
-
-    33.3%,
-    62% {
-        margin-left: -300px;
-    }
-
-    66.7%,
-    95.2% {
-        margin-left: -600px;
-    }
-
-    100% {
-        margin-left: 0;
-    }
-}
-
 /*控制三個文字的樣式*/
 .img label[for="imgInput1"] {
     left: 0;
@@ -388,15 +302,7 @@ body {
 }
 
 /* 相關商品 */
-/* .hr-solid-content {
-    color: #7f7069;
-    border: 0;
-    font-size: 30px;
-    padding: 75px 0 30px 0;
-    position: relative;
-    margin-top: 40px;
 
-} */
 .hr-solid-content {
     color: #7f7069;
     border: 0;
